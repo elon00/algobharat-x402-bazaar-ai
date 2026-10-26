@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "algobharat-x402-bazaar-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "Algorand",
+        "PROJECT_TICKER": "AB402"
+      },
+      "tools": [
+        {
+          "name": "verify_ab402_invariants",
+          "description": "Verifies deterministic invariants for AlgoBharat x402 Bazaar AI on Algorand."
+        },
+        {
+          "name": "execute_ab402_action",
+          "description": "Executes authenticated Commerce state transition."
+        }
+      ]
+    }
+  }
+}
